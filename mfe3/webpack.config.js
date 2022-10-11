@@ -20,7 +20,8 @@ const devConfig = {
             name: 'MFE3',
             filename: 'remoteEntry.js',
             exposes: {
-                'VueFeature': './src/bootstrap'
+                'VueFeature': './src/bootstrap',
+                'VueFeatureApp': './src/App',
             },
             shared: packageJson.dependencies
         }),

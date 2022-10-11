@@ -45,6 +45,7 @@ module.exports = {
 
         exposes: {
           'Button': './src/Button',
+          'ButtonRender': './src/buttonRender',
         },
       }
     ),

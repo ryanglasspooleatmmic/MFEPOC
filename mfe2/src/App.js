@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <h1>
-        Dynamically Resolving Micro-Frontend Host
+        Dynamically Resolving Micro-Frontend Host - React
       </h1>
 
       <div
@@ -31,7 +31,7 @@ function App() {
           Button from MFE3 (Vue)
         </h3>
         <button onClick={() => setLoadVue(true)} disabled={loadVue}>Load MFE3 (Vue) Button</button>
-        {loadVue && <VueShim url="http://localhost:8084/remoteEntry.js" scope="MFE3" module="VueFeature" />}
+        {loadVue && <VueShim url="http://localhost:8084/remoteEntry.js" scope="MFE3" module="VueFeature" clicked={() => alert('Vue3 click handler passed in from react app')} />}
       </div>
     </div>
   );
